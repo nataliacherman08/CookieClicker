@@ -1,7 +1,21 @@
+@font-face {
+  font-family: "Harry P";
+  font-size: normal;
+  font-weight: normal;
+  src: url("../fonts/HarryP.TTF") format("truetype");
+}
+
 body {
   background-color: #7d2430;
   background-image: url("../images/hogwarts.png");
   background-size: cover;
+  font-family: "Harry P";
+}
+
+h2 {
+  color: #efc94a;
+  font-size: 5em;
+  letter-spacing: 0.5em;
 }
 
 #container {
@@ -28,5 +42,26 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 100px;
+}
+
+.dumbledore {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  margin: 50px;
+}
+
+#auto-clicker {
+  background-color: #efc94a;
+  color: #7d2430;
+  font-family: "Harry P";
+  font-size: 1.5em;
+  padding: 20px;
+  margin: 30px;
+  cursor: pointer;
 }
 /*# sourceMappingURL=style.css.map */
