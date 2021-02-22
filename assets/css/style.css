@@ -1,0 +1,32 @@
+body {
+  background-color: #7d2430;
+}
+
+#container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.flexbox-item {
+  width: 200px;
+  margin: 10px;
+  border: 3px solid #8d1818;
+  background-color: #e79427;
+}
+
+.flexbox-item-1 {
+  min-height: 500px;
+  width: 500px;
+  height: 600px;
+}/*# sourceMappingURL=style.css.map */
