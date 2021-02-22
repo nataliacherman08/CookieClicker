@@ -1,0 +1,89 @@
+@font-face {
+    font-family: 'Caviar Dreams';
+    font-size: normal;
+    font-weight: normal;
+    src: url("assets/fonts/CaviarDreams.ttf") format("truetype"), url("assets/fonts/CaviarDreams_Bold.ttf") format("truetype"), url("assets/fonts/CaviarDreams_BoldItalic.ttf") format("truetype"), url("assets/fonts/CaviarDreams_Italic.ttf") format("truetype");
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Caviar Dreams';
+    background-image: url("../img/background.png");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-color: #464646;
+    color: white;
+}
+
+body footer {
+    color: rgba(0, 0, 0, 0.5);
+}
+
+.logo {
+    width: 50px;
+}
+
+ul {
+    margin: auto;
+}
+
+a {
+    font-size: 1em;
+    margin-right: 1em;
+}
+
+.zoom img {
+    opacity: 0.5;
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    -webkit-transition: .3s ease-in-out;
+    transition: .3s ease-in-out;
+}
+
+.zoom img:hover {
+    opacity: 1;
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2);
+}
+
+
+/* Color page*/
+
+.pagination>li>a,
+.pagination>li>span {
+    opacity: 1;
+    background: none;
+    border: none;
+    color: white;
+}
+
+
+/*Pagination*/
+
+#picture2 {
+    display: none;
+}
+
+@media (max-width: 575.98px) {
+    .zoom {
+        margin-bottom: 100px;
+        margin-top: 10px;
+    }
+}
+
+@media (min-width: 575.98px) and (max-width: 768px) {
+    .galleryWrapper {
+        margin-top: 15rem;
+    }
+}
+
+
+/*# sourceMappingURL=style.css.map */

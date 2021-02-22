@@ -1,0 +1,75 @@
+@font-face {
+  font-family: 'Caviar Dreams';
+  font-size: normal;
+  font-weight: normal;
+  src: url("assets/fonts/caviarDreams/CaviarDreams.ttf") format("truetype"), url("assets/fonts/caviarDreams/CaviarDreams_Bold.ttf") format("truetype"), url("assets/fonts/caviarDreams/CaviarDreams_BoldItalic.ttf") format("truetype"), url("assets/fonts/caviarDreams/CaviarDreams_Italic.ttf") format("truetype");
+}
+
+body {
+  background-image: url("https://images5.alphacoders.com/379/thumb-1920-379572.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  color: #fff;
+}
+
+.logo {
+  width: 50px;
+}
+
+ul {
+  margin: auto;
+}
+
+a {
+  font-size: 1em;
+  margin-right: 1em;
+}
+
+.menu {
+  background-color: #000000;
+  opacity: 0.5;
+  font-size: 25px;
+  color: #fff;
+  margin-top: 75px;
+  width: 100%;
+}
+
+.food {
+  padding-top: 60px;
+}
+
+.sushi {
+  width: 100%;
+  opacity: 0.5;
+  position: -webkit-sticky;
+  position: sticky;
+}
+
+li {
+  list-style: none;
+}
+
+footer {
+  color: black;
+}
+
+.tittle-menu {
+  font-weight: 100;
+  font-size: 35px;
+}
+
+.socialNetworks {
+  width: 50px;
+}
+
+.linkFooter {
+  text-decoration: none;
+}
+
+.socialNetworks {
+  width: 30px;
+}
+/*# sourceMappingURL=menu.css.map */
