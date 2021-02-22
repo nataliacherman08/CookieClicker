@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAEA,AAAA,IAAI,CACJ;EAEQ,gBAAK,EALP,OAAO;CAOZ",
+    "sources": [
+        "../sass/style.scss"
+    ],
+    "names": [],
+    "file": "style.css"
+}
