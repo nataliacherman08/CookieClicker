@@ -1,15 +1,28 @@
 
 @import url('http://fonts.cdnfonts.com/css/old-london');
 @import url('http://fonts.cdnfonts.com/css/magic-school-one');
-
+@import "button";
 
 $red: #7d2430;
 $yellow: #efc94a;
 
 
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-weight: normal;
+  font-family: 'Harry P', sans-serif;
+}
 
+html{
+    min-height: 100vh;
+}
 body
 {
+    min-height: 100vh;
     background: {
         color: $red;
         image: url("../img/hogwarts.png");
@@ -29,56 +42,21 @@ body
     
 }
 
-.buttons
-{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 20px;
-    
-}
-
 .dumbledore
 {
     background: transparent;
     border: none;
     cursor: pointer;
     margin: 50px;
-}
-
-#score {
-    background-color:  #efc94a;
-    color:  #7d2430;
-    font-size: 1.8em;
-    padding-left: 15px;
-    margin: 30px;
-    border-radius: 25px;
-    font-family: 'Old London', sans-serif;
-    width: 5em;
-    text-align: center;
-}
-
-.btn {
-    background-color:  #efc94a;
-    color:  #7d2430;
-    font-size: 1.8em;
-    padding-left: 15px;
-    margin: 30px;
-    border-radius: 25px;
-    font-family: 'Old London', sans-serif;
-    width: 5em;
-}
-
-#timedCount {
-    background-color:  #efc94a;
-    color:  #7d2430;
-    font-size: 2em;
-    padding: 20px;
-    margin: 30px;
-    font-family: 'Old London', sans-serif;
-    width: 6em;
-    border-radius: 15px;
-   
+    outline: none;
+    &:hover{
+        transition: 0.6s;
+        transform: scale(1.1);
+    }
+    &:active{
+        transition: 0.6s;
+        transform: scale(0.9);
+    }
 }
 
 h1 {
