@@ -4,6 +4,9 @@
   font-weight: normal;
   src: url("../fonts/HarryP.TTF") format("truetype");
 }
+#mathieu #ronSection img {
+  width: 20px;
+}
 
 .disabled {
   opacity: 0.7;
@@ -27,7 +30,6 @@
   margin-right: 30px;
   position: relative;
 }
-
 .buttons .btn {
   position: relative;
   background-color: #efc94a;
@@ -40,20 +42,17 @@
   width: 10em;
   height: 5rem;
 }
-
 .buttons .btn .title {
   position: absolute;
   top: 0;
   left: 10%;
   font-size: 2.5rem;
 }
-
 .buttons .btn .price {
   position: absolute;
   bottom: 10%;
   left: 10%;
 }
-
 .buttons .btn .compteur {
   font-size: 4rem;
   position: absolute;
@@ -81,7 +80,7 @@
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   font-weight: normal;
-  font-family: 'Harry P', sans-serif;
+  font-family: "Harry P", sans-serif;
 }
 
 body {
@@ -114,14 +113,12 @@ body {
   cursor: pointer;
   outline: none;
 }
-
 .dumbledore:hover {
   -webkit-transition: 0.6s;
   transition: 0.6s;
   -webkit-transform: scale(1.1);
           transform: scale(1.1);
 }
-
 .dumbledore:active {
   -webkit-transition: 0.6s;
   transition: 0.6s;
@@ -156,5 +153,4 @@ footer {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-}
-/*# sourceMappingURL=style.css.map */
+}/*# sourceMappingURL=style.css.map */
