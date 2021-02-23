@@ -4,8 +4,6 @@ window.onload = () => {
     let multiplifier = 1; // multiplie le click
     let priceAutoClicker = 25;
     let priceButtonX2 = 500; // prix initial du bouton X2
-
-
     const scoreTitle = document.getElementById("score");
     const autoClicker = document.getElementById("auto-clicker");
     const buttonX2 = document.getElementById("buttonX2");
