@@ -1,5 +1,5 @@
 // window.onload = () => {
-    let incrementation= 0;
+    let incrementation= 0.0;
     let score = 0.0;
     let multiplier = 1; // multiplicateur de click score
     let priceAutoClicker = 25;
