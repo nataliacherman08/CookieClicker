@@ -7,11 +7,12 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 20px;
-    background: rgba(191, 191, 182, 0.);
+    padding: 20px 0;
+    background: rgba(191, 191, 182, 0.7);
     border-radius: 10px;
     border: 2px solid #efc94a;
     margin-right: 30px;
+    position: relative;
     
     .btn {
         position: relative;

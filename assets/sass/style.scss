@@ -71,20 +71,17 @@ h1
     text-align: center;
 
 }
-
-
-.letter
+.score
 {
-    display: flex;
-    flex-direction: column;
+    font-size: 1em;
 }
+
 
 .owl
 {
     width: 250px;
     position: absolute;
-    top: 50px;
-    left: 1250px;
+    top: -110px;
 }
 
 footer

@@ -20,11 +20,12 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 20px;
-  background: rgba(191, 191, 182, 0.4);
+  padding: 20px 0;
+  background: rgba(191, 191, 182, 0.7);
   border-radius: 10px;
   border: 2px solid #efc94a;
   margin-right: 30px;
+  position: relative;
 }
 
 .buttons .btn {
@@ -65,10 +66,9 @@
   background-color: #efc94a;
   color: #7d2430;
   font-size: 1.8em;
-  padding-left: 15px;
-  margin: 30px;
+  margin: 120px;
   border-radius: 25px;
-  font-family: 'Old London', sans-serif;
+  font-family: "Harry P", sans-serif;
   width: 5em;
   text-align: center;
 }
@@ -129,7 +129,7 @@ body {
           transform: scale(0.9);
 }
 
-h1, p {
+h1 {
   color: #efc94a;
   font-size: 7em;
   letter-spacing: 0.2em;
@@ -137,21 +137,14 @@ h1, p {
   text-align: center;
 }
 
-.letter {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+.score {
+  font-size: 1em;
 }
 
 .owl {
   width: 250px;
   position: absolute;
-  top: 50px;
-  left: 1250px;
+  top: -110px;
 }
 
 footer {
