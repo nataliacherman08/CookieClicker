@@ -39,7 +39,7 @@ body
 h1
 {
     color:  $yellow;
-    font-size: 8em;
+    font-size: 7em;
     letter-spacing: 0.2em;
     margin: 20px;
     margin-bottom: 40px;
@@ -53,16 +53,13 @@ h1
     display:flex;
     flex-direction: row;
     justify-content: space-between;
-    align-items: center;
-    padding-left: 300px;
-    
+    align-items: center;  
+    margin: 0;
+    padding: 0;  
 }
 
-audio
-{
-    outline: none;
-}
 
+//MIDDLE
 .dumbledore
 {
     background: transparent;
@@ -70,7 +67,8 @@ audio
     cursor: pointer;
     outline: none;
     position: absolute;
-    top: 220px;
+    top: 240px;
+    left: 650px;
     &:hover{
         transition: 0.6s;
         transform: scale(1.1);
@@ -88,7 +86,11 @@ audio
 
 .word
 {
-    font-size: 2em;
+    font-size: 3em;
+    color: $yellow;
+    position: relative;
+    left: 90px;
+    top: 40px;
 }
 
 .wordScore
@@ -100,7 +102,16 @@ audio
     align-items: baseline;
 }
 
+#clockDown
+{
+    position: absolute;
+    top: 210px;
+    left: 950px;
+    color: $yellow;
+    font-size: 2em;
+}
 
+//RIGHT
 .owl
 {
     width: 250px;

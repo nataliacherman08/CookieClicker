@@ -8,7 +8,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 150px 0 0 0;
+    padding: 120px 0 0 0;
     border-radius: 10px;
     margin-right: 30px;
     position: relative;
@@ -48,10 +48,11 @@
 }
 
 #score {
-    background-color:  rgba(0, 0, 0, 0.7);
-    color:  #ffffff;
+    color:#efc94a;
     font-size: 1.8em;
-    margin: 120px;
+    position: relative;
+    left: 100px;
+    top: 40px;
     font-family: "Harry P", sans-serif;
     width: 2em;
     height: 1em;
