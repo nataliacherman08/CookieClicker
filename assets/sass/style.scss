@@ -1,39 +1,32 @@
-@font-face
-{
-    font: {
-        family: "Harry P" ;
-        size: normal;
-        weight: normal;
-    }
-    src:url("../fonts/HarryP.TTF") format("truetype"),
-}
+
+@import url('http://fonts.cdnfonts.com/css/old-london');
+@import url('http://fonts.cdnfonts.com/css/magic-school-one');
+
 
 $red: #7d2430;
 $yellow: #efc94a;
+
+
 
 body
 {
     background: {
         color: $red;
-        image: url("../images/hogwarts.png");
+        image: url("../img/hogwarts.png");
         size: cover;
     };
-    font-family: "Harry P";
-}
+    font-family: 'Magic School Two', sans-serif;
 
-h2
-{
-    color: $yellow;
-    font-size: 5em;
-    letter-spacing: 0.5em;
 }
 
 #container
 {
-    display: flex;
+    display:flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
+    padding-left: 300px;
+    
 }
 
 .buttons
@@ -41,7 +34,8 @@ h2
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 100px;
+    padding: 20px;
+    
 }
 
 .dumbledore
@@ -52,13 +46,73 @@ h2
     margin: 50px;
 }
 
-.btn
-{
-    background-color: $yellow;
-    color: $red;
-    font-family: "Harry P";
-    font-size: 1.5em;
+#score {
+    background-color:  #efc94a;
+    color:  #7d2430;
+    font-size: 1.8em;
+    padding-left: 15px;
+    margin: 30px;
+    border-radius: 25px;
+    font-family: 'Old London', sans-serif;
+    width: 6em;
+    text-align: center;
+}
+
+.btn {
+    background-color:  #efc94a;
+    color:  #7d2430;
+    font-size: 1.8em;
+    padding-left: 15px;
+    margin: 30px;
+    border-radius: 25px;
+    font-family: 'Old London', sans-serif;
+    width: 6em;
+}
+
+#timedCount {
+    background-color:  #efc94a;
+    color:  #7d2430;
+    font-size: 2em;
     padding: 20px;
     margin: 30px;
-    cursor: pointer;
+    font-family: 'Old London', sans-serif;
+    width: 6em;
+    border-radius: 15px;
+   
 }
+
+#clickDown {
+    background-color:  #efc94a;
+    color:  #7d2430;
+    font-size: 2em;
+    padding: 30px;
+    margin: 40px;
+    font-family: 'Old London', sans-serif;
+    width: 6em;
+    border-radius: 15px;
+}
+
+h1 {
+    color:  #efc94a;
+    font-size: 7em;
+    letter-spacing: 0.2em;
+    align-self: center;
+    margin: 20px;
+    padding-left: 300px;
+
+}
+
+footer
+{
+    display: flex;
+    background: url('images/trait.png') no-repeat;
+    margin-top: 80px;
+    justify-content: space-between;
+}
+
+
+
+
+
+
+
