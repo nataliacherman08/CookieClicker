@@ -73,8 +73,7 @@ window.onload = () => {
                 multiplier = multiplier / 2;
                 
             } else {
-                let displayTime = timeElm.getElementsByClassName("compteur");
-                displayTime[0].textContent = timeLeft;
+                document.getElementsById("clockDown").innerHTML += timeLeft;
                 timeLeft--;
                 
             }
