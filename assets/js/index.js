@@ -73,7 +73,7 @@ window.onload = () => {
                 multiplier = multiplier / 2;
                 
             } else {
-                document.getElementsById("clockDown").innerHTML += timeLeft;
+                document.getElementsById("clockDown").innerHTML = timeLeft;
                 timeLeft--;
                 
             }
