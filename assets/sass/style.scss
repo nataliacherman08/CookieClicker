@@ -1,6 +1,13 @@
+@font-face
+{
+    font: {
+        family: "Harry P";
+        size: normal;
+        weight: normal;
+    }
+    src: url("../fonts/HarryP.TTF") format("truetype");
+}
 
-@import url('http://fonts.cdnfonts.com/css/old-london');
-@import url('http://fonts.cdnfonts.com/css/magic-school-one');
 @import "button";
 
 $red: #7d2430;
@@ -9,7 +16,8 @@ $yellow: #efc94a;
 
 *,
 *::before,
-*::after {
+*::after
+{
   padding: 0;
   margin: 0;
   box-sizing: border-box;
@@ -17,18 +25,14 @@ $yellow: #efc94a;
   font-family: 'Harry P', sans-serif;
 }
 
-html{
-    min-height: 100vh;
-}
 body
 {
-    min-height: 100vh;
     background: {
         color: $red;
         image: url("../img/hogwarts.png");
         size: cover;
     };
-    font-family: 'Magic School Two', sans-serif;
+    font-family: "Harry P", sans-serif;
 
 }
 
@@ -47,7 +51,6 @@ body
     background: transparent;
     border: none;
     cursor: pointer;
-    margin: 50px;
     outline: none;
     &:hover{
         transition: 0.6s;
@@ -59,8 +62,9 @@ body
     }
 }
 
-h1 {
-    color:  #efc94a;
+h1, p
+{
+    color:  $yellow;
     font-size: 7em;
     letter-spacing: 0.2em;
     align-self: center;
@@ -76,10 +80,3 @@ footer
     margin-top: 80px;
     justify-content: space-between;
 }
-
-
-
-
-
-
-
