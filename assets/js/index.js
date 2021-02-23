@@ -1,7 +1,7 @@
 window.onload = () => {
     let score = 0.0; //score
     let incrementation= 0.0; // c'est la valuer qui va s'ajouter
-    let multiplifier = 1; // multiplie le click
+    let multiplier = 1; // multiplicateur de click score
     let priceAutoClicker = 25;
     let priceButtonX2 = 5; // prix initial du bouton X2
     let clickCounter = 0; //************************************************ */
@@ -25,7 +25,7 @@ window.onload = () => {
 
     // on click
     document.getElementById("click").addEventListener("click", () =>{
-        score = parseFloat(scoreTitle.innerHTML) +multiplifier;
+        score = parseFloat(scoreTitle.innerHTML) +multiplier;
         scoreTitle.innerHTML = score.toFixed(1);
         disabled()
     })
@@ -88,9 +88,11 @@ window.onload = () => {
         buttonClick.forEach(button =>{
             if (parseFloat(button.children[1].innerHTML) <= parseFloat(score)){
                 button.disabled = false;
+                button.classList.remove("disabled")
             }
             else{
                 button.disabled = true;
+                button.classList.add("disabled")
             }
         })
     }

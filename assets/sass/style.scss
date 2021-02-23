@@ -21,6 +21,9 @@ body
     font-family: "Harry P";
 }
 
+.disabled {
+    opacity: 0.7;
+}
 h2
 {
     color: $yellow;
