@@ -19,7 +19,11 @@ window.onload = () => {
         // modif the button
         autoClicker.children[2].innerHTML = parseInt(autoClicker.children[2].innerHTML) + 1;
         priceAutoClicker = priceAutoClicker + (priceAutoClicker *0.2);
+<<<<<<< HEAD
         autoClicker.children[1].innerHTML = parseInt(priceAutoClicker);
+=======
+        autoClicker.children[1].children[0].innerHTML = parseInt(priceAutoClicker);
+>>>>>>> origin/nat
         disabled()
     })
 
@@ -48,7 +52,11 @@ window.onload = () => {
         scoreTitle.innerHTML = score
         priceButtonX2 = Math.floor(priceButtonX2 * 1.4);
         let displayPrice = buttonX2.getElementsByClassName("price"); 
+<<<<<<< HEAD
         displayPrice[0].textContent = priceButtonX2;// changer dans le html
+=======
+        displayPrice[0].children[0].textContent = priceButtonX2;// changer dans le html
+>>>>>>> origin/nat
         multiplier = multiplier * 2; 
 
     })
@@ -62,7 +70,11 @@ window.onload = () => {
         priceBonus = Math.floor(priceBonus * 1.4);
         let timeElm = document.getElementById('timedCount');
         let displayPrice = timeElm.getElementsByClassName("price"); 
+<<<<<<< HEAD
         displayPrice[0].textContent = priceBonus;// changer dans le html
+=======
+        displayPrice[0].children[0].textContent = priceBonus;// changer dans le html
+>>>>>>> origin/nat
         let timeLeft = 10;
         let timerId = setInterval(countdown, 1000);
         multiplier = multiplier * 2;
@@ -73,8 +85,12 @@ window.onload = () => {
                 multiplier = multiplier / 2;
                 
             } else {
+<<<<<<< HEAD
                 let displayTime = timeElm.getElementsByClassName("compteur");
                 displayTime[0].textContent = timeLeft;
+=======
+                document.getElementsById("clockDown").innerHTML += timeLeft;
+>>>>>>> origin/nat
                 timeLeft--;
                 
             }
@@ -86,7 +102,11 @@ window.onload = () => {
     function disabled(){    
         let buttonClick = document.querySelectorAll(".clickModif")
         buttonClick.forEach(button =>{
+<<<<<<< HEAD
             if (parseFloat(button.children[1].innerHTML) <= parseFloat(score)){
+=======
+            if (parseFloat(button.children[1].children[0].innerHTML) <= parseFloat(score)){
+>>>>>>> origin/nat
                 button.disabled = false;
                 button.classList.remove("disabled")
             }
