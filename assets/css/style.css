@@ -51,11 +51,11 @@ body {
 }
 
 .dumbleclick {
-  width: 300px;
+  width: 280px;
 }
 
 .dumbleclick:hover {
-  width: 320px;
+  width: 300px;
 }
 
 #score {
