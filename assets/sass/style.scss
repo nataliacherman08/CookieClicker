@@ -1,5 +1,12 @@
-@import url('http://fonts.cdnfonts.com/css/old-london');
-@import url('http://fonts.cdnfonts.com/css/magic-school-one');
+@font-face
+{
+    font: {
+        family: "Harry P" ;
+        size: normal;
+        weight: normal;
+    }
+    src:url("../fonts/HarryP.TTF") format("truetype"),
+}
 
 $red: #7d2430;
 $yellow: #efc94a;
@@ -8,11 +15,20 @@ body
 {
     background: {
         color: $red;
-        image: url("../img/hogwarts.png");
+        image: url("../images/hogwarts.png");
         size: cover;
     };
-    font-family: 'Magic School Two', sans-serif;
+    font-family: "Harry P";
+}
 
+.disabled {
+    opacity: 0.7;
+}
+h2
+{
+    color: $yellow;
+    font-size: 5em;
+    letter-spacing: 0.5em;
 }
 
 #container
@@ -84,47 +100,10 @@ footer
 
 
 
-#footer {
-    font-size: 5px;
-    text-align: center;
-    margin-bottom: 6.5%;
-    position: absolute;
-    right: 20px;
-    left:10px;
-    bottom: 15px;
-}
 
 
 
 
 
 
-#wrap{
-    position: relative;
-    display: flex;
-    flex-direction: column;
-}
 
-#main{
-    position: relative;
-    flex-grow: 1;
-}
-
-/*Footer*/
-footer > p{
-    color: white;
-    font-family: "Helvetica", sans-serif;
-    font-size: 3vw;
-    text-align: center;
-    margin-bottom: 6.5%;
-    position: absolute;
-    right: 10px;
-    left:10px;
-    bottom: 0;
-}
-
-footer > p >  a {
-    color: white;
-    text-decoration: none;
-    font-family: "Helvetica Bold", sans-serif;
-}
