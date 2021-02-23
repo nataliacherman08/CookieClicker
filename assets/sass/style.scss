@@ -34,8 +34,16 @@ body
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 120px;
+    padding: 20px;
     
+}
+
+.dumbledore
+{
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    margin: 50px;
 }
 
 #score {
@@ -46,6 +54,8 @@ body
     margin: 30px;
     border-radius: 25px;
     font-family: 'Old London', sans-serif;
+    width: 5em;
+    text-align: center;
 }
 
 .btn {
@@ -56,17 +66,19 @@ body
     margin: 30px;
     border-radius: 25px;
     font-family: 'Old London', sans-serif;
+    width: 5em;
 }
 
 #timedCount {
     background-color:  #efc94a;
     color:  #7d2430;
-    font-size: 3em;
+    font-size: 2em;
     padding: 20px;
     margin: 30px;
     font-family: 'Old London', sans-serif;
     width: 6em;
     border-radius: 15px;
+   
 }
 
 h1 {
