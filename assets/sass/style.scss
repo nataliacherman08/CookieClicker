@@ -54,7 +54,7 @@ body
     margin: 30px;
     border-radius: 25px;
     font-family: 'Old London', sans-serif;
-    width: 5em;
+    width: 6em;
     text-align: center;
 }
 
@@ -66,7 +66,7 @@ body
     margin: 30px;
     border-radius: 25px;
     font-family: 'Old London', sans-serif;
-    width: 5em;
+    width: 6em;
 }
 
 #timedCount {
@@ -79,6 +79,17 @@ body
     width: 6em;
     border-radius: 15px;
    
+}
+
+#clickDown {
+    background-color:  #efc94a;
+    color:  #7d2430;
+    font-size: 2em;
+    padding: 30px;
+    margin: 40px;
+    font-family: 'Old London', sans-serif;
+    width: 6em;
+    border-radius: 15px;
 }
 
 h1 {
