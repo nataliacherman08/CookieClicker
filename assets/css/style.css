@@ -4,8 +4,12 @@
   font-weight: normal;
   src: url("../fonts/HarryP.TTF") format("truetype");
 }
+#mathieu {
+  background-color: black;
+  background-image: url("../img/hapo.jpg");
+}
 #mathieu #ronSection img {
-  width: 20px;
+  width: 50px;
 }
 
 .disabled {
@@ -105,6 +109,7 @@ body {
       -ms-flex-align: center;
           align-items: center;
   padding-left: 300px;
+  background-image: url("../img/hapo.jpg");
 }
 
 .dumbledore {
