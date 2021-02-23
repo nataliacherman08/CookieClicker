@@ -1,6 +1,12 @@
-
-@import url('http://fonts.cdnfonts.com/css/old-london');
-@import url('http://fonts.cdnfonts.com/css/magic-school-one');
+@font-face
+{
+    font: {
+        family: "Harry P" ;
+        size: normal;
+        weight: normal;
+    }
+    src:url("../fonts/HarryP.TTF") format("truetype"),
+}
 
 
 $red: #7d2430;
@@ -15,7 +21,7 @@ body
         image: url("../img/hogwarts.png");
         size: cover;
     };
-    font-family: 'Magic School Two', sans-serif;
+    font-family: 'Harry P', sans-serif;
 
 }
 
@@ -43,7 +49,16 @@ body
     background: transparent;
     border: none;
     cursor: pointer;
-    margin: 50px;
+    outline: none;
+}
+
+.dumbleclick
+{
+    width: 300px;
+    &:hover {
+        width: 320px;
+    }
+
 }
 
 #score {
