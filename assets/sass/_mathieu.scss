@@ -3,9 +3,18 @@
         img {
             width: 50px;
         }
-}
+        background: {
+            color: black;
+            image: url("../img/hapo.jpg");
+            size: cover;
+          }
+          height: 100px;
+    }
     background: {
     color: black;
     image: url("../img/hapo.jpg");
+    size: cover;
   }
+  width: 33%;
+
 }
