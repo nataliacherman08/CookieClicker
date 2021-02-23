@@ -91,11 +91,12 @@ body {
 
 h1 {
   color: #efc94a;
-  font-size: 6em;
+  font-size: 8em;
   letter-spacing: 0.2em;
   margin: 20px;
   margin-bottom: 40px;
   text-align: center;
+  border-bottom: 1px solid #efc94a;
 }
 
 #container {
@@ -115,13 +116,17 @@ h1 {
   padding-left: 300px;
 }
 
+audio {
+  outline: none;
+}
+
 .dumbledore {
   background: transparent;
   border: none;
-  margin-top: 40px;
-  margin-left: 120px;
   cursor: pointer;
   outline: none;
+  position: absolute;
+  top: 220px;
 }
 
 .dumbledore:hover {
@@ -138,7 +143,17 @@ h1 {
           transform: scale(0.9);
 }
 
+.dumbleclick {
+  width: 250px;
+}
+
+.word {
+  font-size: 2em;
+}
+
 .wordScore {
+  position: relative;
+  top: 200px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -155,16 +170,5 @@ h1 {
   width: 250px;
   position: absolute;
   top: -50px;
-}
-
-footer {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  background: url("images/trait.png") no-repeat;
-  margin-top: 80px;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
 }
 /*# sourceMappingURL=style.css.map */

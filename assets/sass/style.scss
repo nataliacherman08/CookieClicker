@@ -39,11 +39,12 @@ body
 h1
 {
     color:  $yellow;
-    font-size: 6em;
+    font-size: 8em;
     letter-spacing: 0.2em;
     margin: 20px;
     margin-bottom: 40px;
     text-align: center;
+    border-bottom: 1px solid $yellow;
 
 }
 
@@ -57,14 +58,19 @@ h1
     
 }
 
+audio
+{
+    outline: none;
+}
+
 .dumbledore
 {
     background: transparent;
     border: none;
-    margin-top: 40px;
-    margin-left: 120px;
     cursor: pointer;
     outline: none;
+    position: absolute;
+    top: 220px;
     &:hover{
         transition: 0.6s;
         transform: scale(1.1);
@@ -75,9 +81,20 @@ h1
     }
 }
 
+.dumbleclick
+{
+    width: 250px;
+}
+
+.word
+{
+    font-size: 2em;
+}
 
 .wordScore
 {
+    position: relative;
+    top: 200px;
     display: flex;
     flex-direction: row;
     align-items: baseline;
@@ -89,12 +106,4 @@ h1
     width: 250px;
     position: absolute;
     top: -50px;
-}
-
-footer
-{
-    display: flex;
-    background: url('images/trait.png') no-repeat;
-    margin-top: 80px;
-    justify-content: space-between;
 }
