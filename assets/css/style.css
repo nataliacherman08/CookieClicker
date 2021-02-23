@@ -68,7 +68,6 @@
   padding-left: 15px;
   margin: 30px;
   border-radius: 25px;
-<<<<<<< Updated upstream
   font-family: 'Old London', sans-serif;
   width: 5em;
   text-align: center;
@@ -107,44 +106,6 @@ body {
       -ms-flex-align: center;
           align-items: center;
   padding-left: 300px;
-=======
-  font-family: "Harry P", sans-serif;
-  width: 6em;
-  text-align: center;
-}
-
-.btn {
-  background-color: #efc94a;
-  color: #7d2430;
-  font-size: 1.8em;
-  padding-left: 15px;
-  margin: 30px;
-  border-radius: 25px;
-  font-family: "Harry P", sans-serif;
-  width: 6em;
-}
-
-#timedCount {
-  background-color: #efc94a;
-  color: #7d2430;
-  font-size: 2em;
-  padding: 20px;
-  margin: 30px;
-  font-family: "Harry P", sans-serif;
-  width: 6em;
-  border-radius: 15px;
-}
-
-#clickDown {
-  background-color: #efc94a;
-  color: #7d2430;
-  font-size: 2em;
-  padding: 30px;
-  margin: 40px;
-  font-family: "Harry P", sans-serif;
-  width: 6em;
-  border-radius: 15px;
->>>>>>> Stashed changes
 }
 
 .dumbledore {
