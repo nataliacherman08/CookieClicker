@@ -98,11 +98,9 @@ window.onload = () => {
     })
     // -------------------------
 
-let i = 1;
     //  bonus x200 on clic
     timedCount.addEventListener("click", () =>{
         
-        if(i>4){
         score = score - priceBonus;
         scoreTitle.innerHTML = score
         priceBonus = Math.floor(priceBonus * 2);
@@ -112,11 +110,7 @@ let i = 1;
         let timeLeft = 20;
         let timerId = setInterval(countdown, 1000);
         multiplier = multiplier * 2;
-        i ++,
-        } else {
-            let displayPrice = timeElm.getElementsByClassName("price"); 
-            displayPrice[0].children[0].textContent = "sorry No More";
-        }
+  
         function countdown(){
             if (timeLeft == -1) {
                 clearTimeout(timerId);
