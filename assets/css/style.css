@@ -95,8 +95,7 @@
 
 .middle #clockDown {
   position: absolute;
-  top: 210px;
-  left: 950px;
+  left: 10em;
   color: #efc94a;
   font-size: 2em;
 }
