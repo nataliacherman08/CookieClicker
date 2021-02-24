@@ -15,16 +15,32 @@
   }
     #ronSection  {
         background: {
-            image: url("../img/hapo.jpg");
+            image: url("../img/bgYellow.png");
           }
     }
 
     #hermioneSection {
       background: {
-          image: url("../img/hermi.jpeg");
+          image: url("../img/bgRed.png");
           
         }
   }
+
+    #harrySection {
+      background: {
+        image: url("../img/bgBlue.png");
+        
+      }
+}
+
+    #dobbySection {
+        background: {
+          image: url("../img/bgGreen.png");
+      
+    }
+}
+
+
   width: 33%;
   
 }
