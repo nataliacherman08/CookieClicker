@@ -5,6 +5,96 @@
   src: url("../fonts/HarryP.TTF") format("truetype");
 }
 
+#mathieu {
+  width: 33%;
+}
+
+#mathieu div {
+  height: 100px;
+  background-size: cover;
+  background-position: center center;
+  margin: 2rem;
+}
+
+#mathieu div img {
+  width: 30px;
+}
+
+#mathieu #ronSection {
+  background-image: url("../img/hapo.jpg");
+}
+
+#mathieu #hermioneSection {
+  background-image: url("../img/hermi.jpeg");
+}
+
+.middle {
+  position: relative;
+  width: 33%;
+  height: 60vh;
+}
+
+.middle .dumbledore {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  outline: none;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.middle .dumbledore:hover {
+  -webkit-transition: 0.6s;
+  transition: 0.6s;
+  -webkit-transform: translate(-50%, -50%) scale(1.1);
+          transform: translate(-50%, -50%) scale(1.1);
+}
+
+.middle .dumbledore:active {
+  -webkit-transition: 0.6s;
+  transition: 0.6s;
+  -webkit-transform: translate(-50%, -50%) scale(0.9);
+          transform: translate(-50%, -50%) scale(0.9);
+}
+
+.middle .dumbleclick {
+  width: 250px;
+}
+
+.middle .word {
+  font-size: 3em;
+  color: #efc94a;
+  position: relative;
+  left: 90px;
+  top: 40px;
+}
+
+.middle .wordScore {
+  position: relative;
+  top: 200px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+}
+
+.middle #clockDown {
+  position: absolute;
+  top: 210px;
+  left: 950px;
+  color: #efc94a;
+  font-size: 2em;
+}
+
 .disabled {
   opacity: 0.7;
 }
@@ -84,7 +174,6 @@
 }
 
 body {
-  min-height: 100vh;
   background-color: #7d2430;
   background-image: url("../img/hogwarts.png");
   background-size: cover;
@@ -117,65 +206,6 @@ h1 {
           align-items: center;
   margin: 0;
   padding: 0;
-}
-
-.dumbledore {
-  background: transparent;
-  border: none;
-  cursor: pointer;
-  outline: none;
-  position: absolute;
-  top: 240px;
-  left: 650px;
-}
-
-.dumbledore:hover {
-  -webkit-transition: 0.6s;
-  transition: 0.6s;
-  -webkit-transform: scale(1.1);
-          transform: scale(1.1);
-}
-
-.dumbledore:active {
-  -webkit-transition: 0.6s;
-  transition: 0.6s;
-  -webkit-transform: scale(0.9);
-          transform: scale(0.9);
-}
-
-.dumbleclick {
-  width: 250px;
-}
-
-.word {
-  font-size: 3em;
-  color: #efc94a;
-  position: relative;
-  left: 90px;
-  top: 40px;
-}
-
-.wordScore {
-  position: relative;
-  top: 200px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-align: baseline;
-      -ms-flex-align: baseline;
-          align-items: baseline;
-}
-
-#clockDown {
-  position: absolute;
-  top: 210px;
-  left: 950px;
-  color: #efc94a;
-  font-size: 2em;
 }
 
 .owl {
