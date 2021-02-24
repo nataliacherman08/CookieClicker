@@ -12,11 +12,15 @@
   background-size: cover;
   background-position: center center;
   margin: 2rem;
+  border-radius: 10px;
 }
 #mathieu div img {
-  width: 30px;
-  padding-left: 0.5em;
+  width: 35px;
+  padding-left: 0.7em;
   padding-top: 0.5em;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 #mathieu #ronSection {
   background-image: url("../img/hapo.jpg");
