@@ -26,8 +26,6 @@ window.onload = () => {
         autoClickerRon.children[2].innerHTML = parseInt(autoClickerRon.children[2].innerHTML) + 1;
         priceAutoClickerRon = priceAutoClickerRon + (priceAutoClickerRon *0.2);
         autoClickerRon.children[1].children[0].innerHTML = parseInt(priceAutoClickerRon);
-        console.log(autoClickerRon.children[2].innerHTML)
-        console.log(typeof(autoClickerRon.children[2].innerHTML))
         addRon();
         disabled();
     })
