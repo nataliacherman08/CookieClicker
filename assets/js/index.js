@@ -6,9 +6,9 @@ window.onload = () => {
     let priceAutoClickerHermione = 300;
     let priceAutoClickerHarry = 1000;
     let priceAutoClickerDobby = 2000;
-    let priceButtonX2 = 5; // prix initial du bouton X2
+    let priceButtonX2 = 10; // prix initial du bouton X2
 
-    let priceBonus = 100;// price for bonus
+    let priceBonus = 500;// price for bonus
     const scoreTitle = document.getElementById("score");
     const autoClickerRon = document.getElementById("auto-clicker_ron");
     const autoClickerHermione = document.getElementById("auto-clicker_hermione");
@@ -26,6 +26,8 @@ window.onload = () => {
         autoClickerRon.children[2].innerHTML = parseInt(autoClickerRon.children[2].innerHTML) + 1;
         priceAutoClickerRon = priceAutoClickerRon + (priceAutoClickerRon *0.2);
         autoClickerRon.children[1].children[0].innerHTML = parseInt(priceAutoClickerRon);
+        console.log(autoClickerRon.children[2].innerHTML)
+        console.log(typeof(autoClickerRon.children[2].innerHTML))
         addRon();
         disabled();
     })
@@ -43,7 +45,7 @@ window.onload = () => {
     })
 
        // autoclick event on harry 
-       autoClickerHarry.addEventListener("click", () =>{
+    autoClickerHarry.addEventListener("click", () =>{
         incrementation += 1; // increse the incrementation in the set interval
         minScore(priceAutoClickerHarry);
         // modif the button
@@ -55,16 +57,16 @@ window.onload = () => {
     })
 
         // auto-clicker event on dobby
-        autoClickerDobby.addEventListener("click", () =>{
-            incrementation += 1; // increse the incrementation in the set interval
-            minScore(priceAutoClickerDobby);
-            // modif the button
-            autoClickerDobby.children[2].innerHTML = parseInt(autoClickerDobby.children[2].innerHTML) + 1;
-            priceAutoClickerDobby = priceAutoClickerDobby + (priceAutoClickerDobby *0.2);
-            autoClickerDobby.children[1].children[0].innerHTML = parseInt(priceAutoClickerDobby);
-            addDobby();
-            disabled();
-        })
+    autoClickerDobby.addEventListener("click", () =>{
+        incrementation += 1; // increse the incrementation in the set interval
+        minScore(priceAutoClickerDobby);
+        // modif the button
+        autoClickerDobby.children[2].innerHTML = parseInt(autoClickerDobby.children[2].innerHTML) + 1;
+        priceAutoClickerDobby = priceAutoClickerDobby + (priceAutoClickerDobby *0.2);
+        autoClickerDobby.children[1].children[0].innerHTML = parseInt(priceAutoClickerDobby);
+        addDobby();
+        disabled();
+    })
 
     // on click
     document.getElementById("click").addEventListener("click", () =>{
@@ -80,8 +82,8 @@ window.onload = () => {
     setInterval( () =>{
         score = parseFloat(scoreTitle.innerHTML) + incrementation;
         scoreTitle.innerHTML = score.toFixed(1);
-        disabled()
-    }, 100)
+        disabled();
+    }, 100);
 
 
 
@@ -102,7 +104,7 @@ window.onload = () => {
         timedCount.addEventListener("click", () =>{
         score = score - priceBonus;
         scoreTitle.innerHTML = score
-        priceBonus = Math.floor(priceBonus * 1.4);
+        priceBonus = Math.floor(priceBonus * 5);
         let timeElm = document.getElementById('timedCount');
         let displayPrice = timeElm.getElementsByClassName("price"); 
         displayPrice[0].children[0].textContent = priceBonus;// changer dans le html
@@ -115,12 +117,12 @@ window.onload = () => {
                 clearTimeout(timerId);
                 multiplier = multiplier / 2;
                 let displayTime = document.getElementsByClassName("clockDown"); 
-                displayTime[0].textContent = "Timer ";
+                displayTime[0].textContent = "";
             } else {
                 
                 timeLeft--;
                 let displayTime = document.getElementsByClassName("clockDown"); 
-                displayTime[0].textContent = "Timer: "+timeLeft;
+                displayTime[0].textContent = timeLeft;
                 
             }
         }  
@@ -131,13 +133,19 @@ window.onload = () => {
     function disabled(){    
         let buttonClick = document.querySelectorAll(".clickModif")
         buttonClick.forEach(button =>{
-            if (parseFloat(button.children[1].children[0].innerHTML) <= parseFloat(score)){
-                button.disabled = false;
-                button.classList.remove("disabled")
+            if (parseInt(button.children[2].innerHTML) < 24){
+                if (parseFloat(button.children[1].children[0].innerHTML) <= parseFloat(score)){
+                    button.classList.remove("disabled")
+                    button.disabled = false;
+                }
+                else{
+                    button.classList.add("disabled")
+                    button.disabled = true;
+                }
             }
             else{
-                button.disabled = true;
                 button.classList.add("disabled")
+                button.disabled = true;
             }
         })
     }
