@@ -20,7 +20,6 @@ window.onload = () => {
         autoClicker.children[2].innerHTML = parseInt(autoClicker.children[2].innerHTML) + 1;
         priceAutoClicker = priceAutoClicker + (priceAutoClicker *0.2);
         autoClicker.children[1].children[0].innerHTML = parseInt(priceAutoClicker);
-        addRon();
         disabled()
     })
 
@@ -100,10 +99,5 @@ window.onload = () => {
     function minScore(minus){
         scoreTitle.innerHTML = parseFloat(scoreTitle.innerHTML) - minus
     }
-    function addRon(){
-        document.getElementById("ronSection").innerHTML += '<img src="./assets/img/ron.png" alt="ron">';
-    }
 }
-
-
 
