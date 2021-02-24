@@ -98,10 +98,10 @@ window.onload = () => {
     })
     // -------------------------
 
-
+let i = 1;
     //  bonus x200 on clic
     timedCount.addEventListener("click", () =>{
-        let i = 1;
+        
         if(i>4){
         score = score - priceBonus;
         scoreTitle.innerHTML = score
