@@ -98,25 +98,18 @@ window.onload = () => {
     })
     // -------------------------
 
-
     //  bonus x200 on clic
-    timedCount.addEventListener("click", () =>{
-        let i = 1;
-        if(i>4){
+        timedCount.addEventListener("click", () =>{
         score = score - priceBonus;
         scoreTitle.innerHTML = score
-        priceBonus = Math.floor(priceBonus * 2);
+        priceBonus = Math.floor(priceBonus * 1.4);
         let timeElm = document.getElementById('timedCount');
         let displayPrice = timeElm.getElementsByClassName("price"); 
         displayPrice[0].children[0].textContent = priceBonus;// changer dans le html
-        let timeLeft = 20;
+        let timeLeft = 10;
         let timerId = setInterval(countdown, 1000);
         multiplier = multiplier * 2;
-        i ++,
-        } else {
-            let displayPrice = timeElm.getElementsByClassName("price"); 
-            displayPrice[0].children[0].textContent = "sorry No More";
-        }
+        
         function countdown(){
             if (timeLeft == -1) {
                 clearTimeout(timerId);
@@ -124,9 +117,10 @@ window.onload = () => {
                 let displayTime = document.getElementsByClassName("clockDown"); 
                 displayTime[0].textContent = "Timer ";
             } else {
-                let displayTime = document.getElementsByClassName("clockDown"); 
-                displayTime[0].textContent = "Timer "+timeLeft;
+                
                 timeLeft--;
+                let displayTime = document.getElementsByClassName("clockDown"); 
+                displayTime[0].textContent = "Timer: "+timeLeft;
                 
             }
         }  
