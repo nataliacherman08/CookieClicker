@@ -8,11 +8,19 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 120px 0 0 0;
+    padding: 60px 0 10px 0;
     border-radius: 10px;
     margin-right: 30px;
     position: relative;
     background: url("../img/briques.PNG");
+
+    .owl
+    {
+        width: 220px;
+        position: absolute;
+        top: -70px;
+    }
+
     
     .btn {
         position: relative;
@@ -20,7 +28,7 @@
         color:  #7d2430;
         font-size: 1.5em;
         padding-left: 15px;
-        margin: 30px;
+        margin: 5px 40px;
         font-family: "Harry P", sans-serif;
         width: 9em;
         height: 5rem;
