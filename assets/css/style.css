@@ -257,4 +257,25 @@ h1 {
   padding: 0;
   height: 70vh;
 }
+
+footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 10px;
+}
+
+.house {
+  height: 9vh;
+  margin-right: 20px;
+  border: 2px solid #efc94a;
+  border-radius: 6vh;
+}
 /*# sourceMappingURL=style.css.map */

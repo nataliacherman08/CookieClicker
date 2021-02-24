@@ -60,3 +60,19 @@ h1
     padding: 0;  
     height: 70vh;
 }
+
+footer
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.house
+{
+    height: 9vh;
+    margin-right: 20px;
+    border: 2px solid $yellow;
+    border-radius: 6vh;
+}
