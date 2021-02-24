@@ -8,6 +8,8 @@
     src: url("../fonts/HarryP.TTF") format("truetype");
 }
 
+@import "mathieu";
+
 @import "button";
 
 $red: #7d2430;
@@ -63,6 +65,7 @@ h1
 //MIDDLE
 .dumbledore
 {
+
     background: transparent;
     border: none;
     cursor: pointer;
