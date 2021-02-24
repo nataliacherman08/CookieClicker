@@ -269,12 +269,11 @@ footer {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  margin-top: 10px;
 }
 
 .house {
   height: 9vh;
-  margin-right: 20px;
+  margin: 10px 10px;
   border: 2px solid #efc94a;
   border-radius: 6vh;
 }
