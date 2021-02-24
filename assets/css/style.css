@@ -94,7 +94,7 @@
   position: absolute;
 }
 
-.middle #clockDown {
+.middle .clockDown {
   position: absolute;
   top: -1em;
   left: 10em;
