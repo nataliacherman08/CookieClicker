@@ -111,17 +111,15 @@ window.onload = () => {
         multiplier = multiplier * 2;
         
         function countdown(){
-            if (timeLeft == -1) {
+            if (timeLeft == 0) {
                 clearTimeout(timerId);
                 multiplier = multiplier / 2;
                 let displayTime = document.getElementsByClassName("clockDown"); 
                 displayTime[0].textContent = "";
             } else {
-                
-                timeLeft--;
                 let displayTime = document.getElementsByClassName("clockDown"); 
                 displayTime[0].textContent = timeLeft;
-                
+                timeLeft--;
             }
         }  
     });
