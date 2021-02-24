@@ -4,12 +4,10 @@
   font-weight: normal;
   src: url("../fonts/HarryP.TTF") format("truetype");
 }
-
 #mathieu {
   height: 60vh;
   width: 33%;
 }
-
 #mathieu div {
   height: 25%;
   background-size: cover;
@@ -18,28 +16,23 @@
   border-radius: 10px;
   position: relative;
 }
-
 #mathieu div img {
   width: 8%;
-  padding-left: .7em;
-  padding-top: .5em;
+  padding-left: 0.7em;
+  padding-top: 0.5em;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
 }
-
 #mathieu #ronSection {
   background-image: url("../img/bgYellow.png");
 }
-
 #mathieu #hermioneSection {
   background-image: url("../img/bgRed.png");
 }
-
 #mathieu #harrySection {
   background-image: url("../img/bgBlue.png");
 }
-
 #mathieu #dobbySection {
   background-image: url("../img/bgGreen.png");
 }
@@ -49,7 +42,6 @@
   width: 33%;
   height: 60vh;
 }
-
 .middle .dumbledore {
   background: transparent;
   border: none;
@@ -61,30 +53,25 @@
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
 }
-
 .middle .dumbledore:hover {
   -webkit-transition: 0.6s;
   transition: 0.6s;
   -webkit-transform: translate(-50%, -50%) scale(1.1);
           transform: translate(-50%, -50%) scale(1.1);
 }
-
 .middle .dumbledore:active {
   -webkit-transition: 0.6s;
   transition: 0.6s;
   -webkit-transform: translate(-50%, -50%) scale(0.9);
           transform: translate(-50%, -50%) scale(0.9);
 }
-
 .middle .dumbleclick {
   width: 250px;
 }
-
 .middle .word {
   font-size: 3em;
   color: #efc94a;
 }
-
 .middle #score {
   color: #efc94a;
   font-size: 1.8em;
@@ -93,7 +80,6 @@
   height: 1em;
   text-align: center;
 }
-
 .middle .wordScore {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -111,7 +97,6 @@
           transform: translateX(-50%);
   position: absolute;
 }
-
 .middle .clockDown {
   position: absolute;
   top: 5%;
@@ -143,13 +128,11 @@
   background: url("../img/briques.PNG");
   border: 2px solid #efc94a;
 }
-
 .buttons .owl {
   width: 220px;
   position: absolute;
   top: -100px;
 }
-
 .buttons .btn {
   position: relative;
   background-color: #efc94a;
@@ -163,20 +146,17 @@
   outline: none;
   border-radius: 10px;
 }
-
 .buttons .btn .title {
   position: absolute;
   top: 0;
   left: 10%;
   font-size: 2rem;
 }
-
 .buttons .btn .price {
   position: absolute;
   bottom: 10%;
   left: 10%;
 }
-
 .buttons .btn .compteur {
   font-size: 2rem;
   position: absolute;
@@ -184,11 +164,16 @@
   left: 85%;
   top: 10px;
 }
-
 .buttons .btn .bonhomme {
   width: 30px;
 }
 
+#footer {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  bottom: 0;
+}
 *,
 *::before,
 *::after {
@@ -197,7 +182,7 @@
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   font-weight: normal;
-  font-family: 'Harry P', sans-serif;
+  font-family: "Harry P", sans-serif;
 }
 
 body {
@@ -214,7 +199,7 @@ h1 {
   margin: 20px;
   margin-bottom: 40px;
   text-align: center;
-  border-bottom: 1px solid #efc94a;
+  border-bottom: 2px solid #efc94a;
 }
 
 #container {
@@ -233,5 +218,4 @@ h1 {
           align-items: center;
   margin: 0;
   padding: 0;
-}
-/*# sourceMappingURL=style.css.map */
+}/*# sourceMappingURL=style.css.map */

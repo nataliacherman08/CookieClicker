@@ -11,6 +11,7 @@
 @import "mathieu";
 @import "middle";
 @import "button";
+@import "footer";
 
 $red: #7d2430;
 $yellow: #efc94a;
@@ -46,7 +47,7 @@ h1
     margin: 20px;
     margin-bottom: 40px;
     text-align: center;
-    border-bottom: 1px solid $yellow;
+    border-bottom: 2px solid $yellow;
 
 }
 
