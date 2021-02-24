@@ -14,17 +14,15 @@
     Harry Clicker
 </h1>
 
+<audio src="assets/Harry Potter Theme Song.mp3" autoplay loop></audio>
 <main id="container">
     <!--Gauche-->
     <section id="mathieu">
         <div id="ronSection"></div>
 
-        <div id="hermioneSection">bonus hermione</div>
+        <div id="hermioneSection"></div>
 
-        <div id="ornement">ornement</div>
-    
-        MATHIEU ROMAIN
-        <audio src="assets/Harry Potter Theme Song.mp3" autoplay loop></audio>
+        <div id="harrySection"></div>
     </section>
 
     <!--Milieu-->
@@ -41,23 +39,41 @@
     </section>
 
     <!--Droite-->
-    <section class="buttons">
-        <img class="owl" src="assets/img/owl.png" />
-        <button class="btn clickModif" id="buttonX2">
-            <span class="title">Click x2</span>
-            <span class="price"> price: <span>5</span></span>
-        </button>
 
-        <button class="btn clickModif" id="auto-clicker">
-            <span class="title">Ron bonus</span>
-            <span class="price"> price: <span>25</span></span>
-            <span class="compteur"> 0</span>
-        </button>
+
+    <section class="buttons">
+
+        <img class="owl" src="assets/img/owl.png" />
 
         <button class="btn clickModif" id="timedCount">
             <span class="title">Bonus x200</span>
             <span class="price">price: <span>5</span></span>
         </button>
+
+        <button class="btn clickModif" id="buttonX2">
+            <span class="title">Click x2</span>
+            <span class="price"> price: <span>5</span></span>
+        </button>
+
+        <button class="btn clickModif" id="auto-clicker_ron">
+            <span class="title">Ron bonus</span>
+            <span class="price"> price: <span>25</span></span>
+            <span class="compteur"> 0</span>
+        </button>
+
+        <button class="btn clickModif" id="auto-clicker_hermione">
+            <span class="title">Hermione bonus</span>
+            <span class="price"> price: <span>300</span></span>
+            <span class="compteur"> 0</span>
+        </button>
+
+        <button class="btn clickModif" id="auto-clicker_harry">
+            <span class="title">Harry bonus</span>
+            <span class="price"> price: <span>1000</span></span>
+            <span class="compteur"> 0</span>
+        </button>
+
+
     </section>
 </main>
 <script src="./assets/js/index.js"></script>

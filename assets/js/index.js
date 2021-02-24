@@ -2,25 +2,54 @@ window.onload = () => {
     let score = 0.0; //score
     let incrementation= 0.0; // c'est la valuer qui va s'ajouter
     let multiplier = 1; // multiplicateur de click score
-    let priceAutoClicker = 25;
+    let priceAutoClickerRon = 25;
+    let priceAutoClickerHermione = 300;
+    let priceAutoClickerHarry = 1000;
     let priceButtonX2 = 5; // prix initial du bouton X2
-    let clickCounter = 0; //************************************************ */
+
     let priceBonus = 5;// price for bonus
     const scoreTitle = document.getElementById("score");
-    const autoClicker = document.getElementById("auto-clicker");
+    const autoClickerRon = document.getElementById("auto-clicker_ron");
+    const autoClickerHermione = document.getElementById("auto-clicker_hermione");
+    const autoClickerHarry = document.getElementById("auto-clicker_harry");
     const buttonX2 = document.getElementById("buttonX2");
     
 
     disabled()
-    // auto-clicker event
-    autoClicker.addEventListener("click", () =>{
+    // auto-clicker event on ron
+    autoClickerRon.addEventListener("click", () =>{
         incrementation += 0.1; // increse the incrementation in the set interval
-        minScore(priceAutoClicker);
+        minScore(priceAutoClickerRon);
         // modif the button
-        autoClicker.children[2].innerHTML = parseInt(autoClicker.children[2].innerHTML) + 1;
-        priceAutoClicker = priceAutoClicker + (priceAutoClicker *0.2);
-        autoClicker.children[1].children[0].innerHTML = parseInt(priceAutoClicker);
-        disabled()
+        autoClickerRon.children[2].innerHTML = parseInt(autoClickerRon.children[2].innerHTML) + 1;
+        priceAutoClickerRon = priceAutoClickerRon + (priceAutoClickerRon *0.2);
+        autoClickerRon.children[1].children[0].innerHTML = parseInt(priceAutoClickerRon);
+        addRon();
+        disabled();
+    })
+
+    // autoclick event on hermione 
+    autoClickerHermione.addEventListener("click", () =>{
+        incrementation += 1; // increse the incrementation in the set interval
+        minScore(priceAutoClickerHermione);
+        // modif the button
+        autoClickerHermione.children[2].innerHTML = parseInt(autoClickerHermione.children[2].innerHTML) + 1;
+        priceAutoClickerHermione = priceAutoClickerHermione + (priceAutoClickerHermione *0.2);
+        autoClickerHermione.children[1].children[0].innerHTML = parseInt(priceAutoClickerHermione);
+        addHermione();
+        disabled();
+    })
+
+       // autoclick event on harry 
+       autoClickerHarry.addEventListener("click", () =>{
+        incrementation += 0.5; // increse the incrementation in the set interval
+        minScore(priceAutoClickerHarry);
+        // modif the button
+        autoClickerHarry.children[2].innerHTML = parseInt(autoClickerHarry.children[2].innerHTML) + 1;
+        priceAutoClickerHarry = priceAutoClickerHarry + (priceAutoClickerHarry *0.2);
+        autoClickerHarry.children[1].children[0].innerHTML = parseInt(priceAutoClickerHarry);
+        addHarry();
+        disabled();
     })
 
     // on click
@@ -98,6 +127,19 @@ window.onload = () => {
     // ------------------- score min
     function minScore(minus){
         scoreTitle.innerHTML = parseFloat(scoreTitle.innerHTML) - minus
+    }
+
+    // ron
+    function addRon(){
+        document.getElementById("ronSection").innerHTML += '<img src="./assets/img/ron.png" alt="ron">';
+    }
+
+    function addHermione(){
+        document.getElementById("hermioneSection").innerHTML += '<img src="./assets/img/hermione.png" alt="hermione">';
+    }
+
+    function addHarry(){
+        document.getElementById("harrySection").innerHTML += '<img src="./assets/img/potter.png" alt="harry">';
     }
 }
 

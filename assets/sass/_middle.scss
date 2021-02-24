@@ -1,0 +1,62 @@
+//MIDDLE
+$red: #7d2430;
+$yellow: #efc94a;
+
+.middle{
+    position: relative;
+    width: 33%;
+    height: 60vh;
+    .dumbledore
+    {
+    
+        background: transparent;
+        border: none;
+        cursor: pointer;
+        outline: none;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%,-50%);
+        &:hover{
+            transition: 0.6s;
+            transform: translate(-50%,-50%) scale(1.1);
+        }
+        &:active{
+            transition: 0.6s;
+            transform: translate(-50%,-50%) scale(0.9);
+        }
+    }
+    
+    .dumbleclick
+    {
+        width: 250px;
+    }
+    
+    .word
+    {
+        font-size: 3em;
+        color: $yellow;
+        position: relative;
+        left: 90px;
+        top: 40px;
+    }
+    
+    .wordScore
+    {
+        position: relative;
+        top: 200px;
+        display: flex;
+        flex-direction: row;
+        align-items: baseline;
+    }
+    
+    #clockDown
+    {
+        position: absolute;
+        top: 210px;
+        left: 950px;
+        color: $yellow;
+        font-size: 2em;
+    }
+    
+}
