@@ -31,14 +31,15 @@ $yellow: #efc94a;
     {
         width: 250px;
     }
-    
+
+
+    //Score zone
     .word
     {
         font-size: 3em;
         color: $yellow;
         position: relative;
-        left: 90px;
-        top: 40px;
+        bottom: 0;
     }
     
     .wordScore
