@@ -5,10 +5,9 @@ $yellow: #efc94a;
 .middle{
     position: relative;
     width: 33%;
-    height: 60vh;
+    height: 100%;
     .dumbledore
     {
-    
         background: transparent;
         border: none;
         cursor: pointer;
@@ -29,7 +28,7 @@ $yellow: #efc94a;
     
     .dumbleclick
     {
-        width: 250px;
+        width: 400px;
     }
 
 
@@ -54,7 +53,7 @@ $yellow: #efc94a;
         display: flex;
         flex-direction: row;
         align-items: baseline;
-        bottom: -2em;
+        bottom: 0;
         left: 50%;
         transform: translateX(-50%);
         position: absolute;
