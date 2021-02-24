@@ -28,18 +28,6 @@ window.onload = () => {
         disabled();
     })
 
-    // autoclick event on harry 
-    autoClickerHarry.addEventListener("click", () =>{
-        incrementation += 0.5; // increse the incrementation in the set interval
-        minScore(priceAutoClickerHarry);
-        // modif the button
-        autoClickerHarry.children[2].innerHTML = parseInt(autoClickerHarry.children[2].innerHTML) + 1;
-        priceAutoClickerHarry = priceAutoClickerHarry + (priceAutoClickerHarry *0.2);
-        autoClickerHarry.children[1].children[0].innerHTML = parseInt(priceAutoClickerHarry);
-        addHarry();
-        disabled();
-    })
-
     // autoclick event on hermione 
     autoClickerHermione.addEventListener("click", () =>{
         incrementation += 1; // increse the incrementation in the set interval
@@ -49,6 +37,18 @@ window.onload = () => {
         priceAutoClickerHermione = priceAutoClickerHermione + (priceAutoClickerHermione *0.2);
         autoClickerHermione.children[1].children[0].innerHTML = parseInt(priceAutoClickerHermione);
         addHermione();
+        disabled();
+    })
+
+       // autoclick event on harry 
+       autoClickerHarry.addEventListener("click", () =>{
+        incrementation += 0.5; // increse the incrementation in the set interval
+        minScore(priceAutoClickerHarry);
+        // modif the button
+        autoClickerHarry.children[2].innerHTML = parseInt(autoClickerHarry.children[2].innerHTML) + 1;
+        priceAutoClickerHarry = priceAutoClickerHarry + (priceAutoClickerHarry *0.2);
+        autoClickerHarry.children[1].children[0].innerHTML = parseInt(priceAutoClickerHarry);
+        addHarry();
         disabled();
     })
 
