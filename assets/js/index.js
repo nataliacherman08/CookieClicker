@@ -122,8 +122,7 @@ window.onload = () => {
                 displayTime[0].textContent = "Timer "+timeLeft;
                 timeLeft--;
                 
-            }
-        }  
+            }  
     });
     // -------------------------------
 
