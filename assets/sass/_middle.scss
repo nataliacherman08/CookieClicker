@@ -38,19 +38,27 @@ $yellow: #efc94a;
     {
         font-size: 3em;
         color: $yellow;
-        position: relative;
-        bottom: 0;
+    }
+
+    #score {
+        color:#efc94a;
+        font-size: 1.8em;
+        font-family: "Harry P", sans-serif;
+        width: 2em;
+        height: 1em;
+        text-align: center;
     }
     
     .wordScore
     {
-        position: relative;
-        top: 200px;
         display: flex;
         flex-direction: row;
         align-items: baseline;
+        bottom: 0;
+        position: absolute;
     }
     
+    //Timer
     #clockDown
     {
         position: absolute;
