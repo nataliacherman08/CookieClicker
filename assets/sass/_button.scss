@@ -9,7 +9,6 @@ $yellow: #efc94a;
 
 .buttons{
     width: 33%;
-
     div{
         display: flex;
         flex-direction: column;
@@ -39,19 +38,24 @@ $yellow: #efc94a;
             margin: 5px 40px;
             font-family: "Harry P", sans-serif;
             width: 9em;
-            height: 5rem;
+            height: 4.5rem;
             outline: none;
             border-radius: 10px;
+            cursor: url("../img/magicWand.png"),auto;
 
             .title{
-                position: absolute;
+                /*position: absolute;
                 top: 0;
-                left: 10%;
+                left: 10%;*/
+                display: flex;
+                flex-direction: row;
+                align-items: center;
                 font-size: 2rem;
+                margin-bottom: 20px;
             }
             .price{
                 position: absolute;
-                bottom: 10%;
+                bottom: 6%;
                 left: 10%;
             }
             .compteur{
@@ -64,7 +68,7 @@ $yellow: #efc94a;
 
             .bonhomme
             {
-                width: 30px;
+                max-height: 5vh;
             }
         }
     

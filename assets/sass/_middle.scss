@@ -10,7 +10,7 @@ $yellow: #efc94a;
     {
         background: transparent;
         border: none;
-        cursor: pointer;
+        cursor: url("../img/magicWand.png"),auto;
         outline: none;
         position: absolute;
         left: 50%;
@@ -28,7 +28,7 @@ $yellow: #efc94a;
     
     .dumbleclick
     {
-        height: 60vh;
+        height: 50vh;
     }
 
 
@@ -53,11 +53,16 @@ $yellow: #efc94a;
         display: flex;
         flex-direction: row;
         align-items: baseline;
+        justify-content: center;
         bottom: 0;
         left: 50%;
         transform: translateX(-50%);
         position: absolute;
-
+        background-color: $red;
+        width: 300px;
+        border: 2px solid $yellow;
+        border-radius: 15px;
+        padding: 5px;
     }
     
     //Timer
@@ -65,7 +70,7 @@ $yellow: #efc94a;
     {
         position: absolute;
         top: 5%;
-        right: 10%;
+        right: 0;
         color: $yellow;
         font-size: 2.5em;
     }
