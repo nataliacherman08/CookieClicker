@@ -1,6 +1,13 @@
+@font-face
+{
+    font: {
+        family: "Harry P";
+        size: normal;
+        weight: normal;
+    }
+    src: url("../fonts/HarryP.TTF") format("truetype");
+}
 
-@import url('http://fonts.cdnfonts.com/css/old-london');
-@import url('http://fonts.cdnfonts.com/css/magic-school-one');
 @import "button";
 
 $red: #7d2430;
@@ -9,7 +16,8 @@ $yellow: #efc94a;
 
 *,
 *::before,
-*::after {
+*::after
+{
   padding: 0;
   margin: 0;
   box-sizing: border-box;
@@ -17,9 +25,6 @@ $yellow: #efc94a;
   font-family: 'Harry P', sans-serif;
 }
 
-html{
-    min-height: 100vh;
-}
 body
 {
     min-height: 100vh;
@@ -28,7 +33,19 @@ body
         image: url("../img/hogwarts.png");
         size: cover;
     };
-    font-family: 'Magic School Two', sans-serif;
+    font-family: "Harry P", sans-serif;
+
+}
+
+h1
+{
+    color:  $yellow;
+    font-size: 7em;
+    letter-spacing: 0.2em;
+    margin: 20px;
+    margin-bottom: 40px;
+    text-align: center;
+    border-bottom: 1px solid $yellow;
 
 }
 
@@ -37,18 +54,22 @@ body
     display:flex;
     flex-direction: row;
     justify-content: space-between;
-    align-items: center;
-    padding-left: 300px;
-    
+    align-items: center;  
+    margin: 0;
+    padding: 0;  
 }
 
+
+//MIDDLE
 .dumbledore
 {
     background: transparent;
     border: none;
     cursor: pointer;
-    margin: 50px;
     outline: none;
+    position: absolute;
+    top: 240px;
+    left: 650px;
     &:hover{
         transition: 0.6s;
         transform: scale(1.1);
@@ -59,27 +80,42 @@ body
     }
 }
 
-h1 {
-    color:  #efc94a;
-    font-size: 7em;
-    letter-spacing: 0.2em;
-    align-self: center;
-    margin: 20px;
-    padding-left: 300px;
-
-}
-
-footer
+.dumbleclick
 {
-    display: flex;
-    background: url('images/trait.png') no-repeat;
-    margin-top: 80px;
-    justify-content: space-between;
+    width: 250px;
 }
 
+.word
+{
+    font-size: 3em;
+    color: $yellow;
+    position: relative;
+    left: 90px;
+    top: 40px;
+}
 
+.wordScore
+{
+    position: relative;
+    top: 200px;
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+}
 
+#clockDown
+{
+    position: absolute;
+    top: 210px;
+    left: 950px;
+    color: $yellow;
+    font-size: 2em;
+}
 
-
-
-
+//RIGHT
+.owl
+{
+    width: 250px;
+    position: absolute;
+    top: -50px;
+}

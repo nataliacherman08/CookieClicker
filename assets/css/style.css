@@ -1,5 +1,10 @@
-@import url("http://fonts.cdnfonts.com/css/old-london");
-@import url("http://fonts.cdnfonts.com/css/magic-school-one");
+@font-face {
+  font-family: "Harry P";
+  font-size: normal;
+  font-weight: normal;
+  src: url("../fonts/HarryP.TTF") format("truetype");
+}
+
 .disabled {
   opacity: 0.7;
 }
@@ -15,7 +20,11 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 20px;
+  padding: 120px 0 0 0;
+  border-radius: 10px;
+  margin-right: 30px;
+  position: relative;
+  background: url("../img/briques.PNG");
 }
 
 .buttons .btn {
@@ -25,8 +34,7 @@
   font-size: 1.8em;
   padding-left: 15px;
   margin: 30px;
-  border-radius: 25px;
-  font-family: 'Old London', sans-serif;
+  font-family: "Harry P", sans-serif;
   width: 10em;
   height: 5rem;
 }
@@ -53,14 +61,14 @@
 }
 
 #score {
-  background-color: #efc94a;
-  color: #7d2430;
+  color: #efc94a;
   font-size: 1.8em;
-  padding-left: 15px;
-  margin: 30px;
-  border-radius: 25px;
-  font-family: 'Old London', sans-serif;
-  width: 5em;
+  position: relative;
+  left: 100px;
+  top: 40px;
+  font-family: "Harry P", sans-serif;
+  width: 2em;
+  height: 1em;
   text-align: center;
 }
 
@@ -75,16 +83,22 @@
   font-family: 'Harry P', sans-serif;
 }
 
-html {
-  min-height: 100vh;
-}
-
 body {
   min-height: 100vh;
   background-color: #7d2430;
   background-image: url("../img/hogwarts.png");
   background-size: cover;
-  font-family: 'Magic School Two', sans-serif;
+  font-family: "Harry P", sans-serif;
+}
+
+h1 {
+  color: #efc94a;
+  font-size: 7em;
+  letter-spacing: 0.2em;
+  margin: 20px;
+  margin-bottom: 40px;
+  text-align: center;
+  border-bottom: 1px solid #efc94a;
 }
 
 #container {
@@ -101,15 +115,18 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding-left: 300px;
+  margin: 0;
+  padding: 0;
 }
 
 .dumbledore {
   background: transparent;
   border: none;
   cursor: pointer;
-  margin: 50px;
   outline: none;
+  position: absolute;
+  top: 240px;
+  left: 650px;
 }
 
 .dumbledore:hover {
@@ -126,25 +143,44 @@ body {
           transform: scale(0.9);
 }
 
-h1 {
-  color: #efc94a;
-  font-size: 7em;
-  letter-spacing: 0.2em;
-  -ms-flex-item-align: center;
-      -ms-grid-row-align: center;
-      align-self: center;
-  margin: 20px;
-  padding-left: 300px;
+.dumbleclick {
+  width: 250px;
 }
 
-footer {
+.word {
+  font-size: 3em;
+  color: #efc94a;
+  position: relative;
+  left: 90px;
+  top: 40px;
+}
+
+.wordScore {
+  position: relative;
+  top: 200px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  background: url("images/trait.png") no-repeat;
-  margin-top: 80px;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+}
+
+#clockDown {
+  position: absolute;
+  top: 210px;
+  left: 950px;
+  color: #efc94a;
+  font-size: 2em;
+}
+
+.owl {
+  width: 250px;
+  position: absolute;
+  top: -50px;
 }
 /*# sourceMappingURL=style.css.map */

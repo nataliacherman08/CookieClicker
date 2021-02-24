@@ -10,19 +10,33 @@
     <title>Cookie Clicker Game</title>
 </head>
 
-<h1>Harry Clicker</h1>
+<h1>
+    Harry Clicker
+</h1>
 
 <main id="container">
+    <!--Gauche-->
     <section>
-
-    </section>
-    <section>
-        <h1 id="score">0.0</h1>
-        <button class="dumbledore" id="click"><img src="./assets/img/dumbledore.png" alt="dumbledore" /></button>
+        MATHIEU ROMAIN
+        <audio src="assets/Harry Potter Theme Song.mp3" autoplay loop></audio>
     </section>
 
+    <!--Milieu-->
+    <section class="middle">
+        <button class="dumbledore" id="click">
+            <img class="dumbleclick" src="./assets/img/dumbledore.png" alt="dumbledore" />
+        </button>
+        <div class="wordScore">
+            <p class="word">score : </p>
+            <p id="score">0.0</p>
+        </div>
 
+        <div id="clockDown">Timer</div>
+    </section>
+
+    <!--Droite-->
     <section class="buttons">
+        <img class="owl" src="assets/img/owl.png" />
         <button class="btn clickModif" id="buttonX2">
             <span class="title">Click x2</span>
             <span class="price"> price: <span>5</span></span>
