@@ -156,6 +156,7 @@
   width: 9em;
   height: 5rem;
   outline: none;
+  border-radius: 10px;
 }
 
 .buttons .btn .title {
