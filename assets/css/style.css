@@ -136,6 +136,7 @@
   margin-right: 30px;
   position: relative;
   background: url("../img/briques.PNG");
+  border: 2px solid #efc94a;
 }
 
 .buttons .owl {
