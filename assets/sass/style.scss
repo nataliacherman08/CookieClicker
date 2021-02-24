@@ -9,7 +9,7 @@
 }
 
 @import "mathieu";
-
+@import "middle";
 @import "button";
 
 $red: #7d2430;
@@ -29,7 +29,6 @@ $yellow: #efc94a;
 
 body
 {
-    min-height: 100vh;
     background: {
         color: $red;
         image: url("../img/hogwarts.png");
@@ -61,59 +60,6 @@ h1
     padding: 0;  
 }
 
-
-//MIDDLE
-.dumbledore
-{
-
-    background: transparent;
-    border: none;
-    cursor: pointer;
-    outline: none;
-    position: absolute;
-    top: 240px;
-    left: 650px;
-    &:hover{
-        transition: 0.6s;
-        transform: scale(1.1);
-    }
-    &:active{
-        transition: 0.6s;
-        transform: scale(0.9);
-    }
-}
-
-.dumbleclick
-{
-    width: 250px;
-}
-
-.word
-{
-    font-size: 3em;
-    color: $yellow;
-    position: relative;
-    left: 90px;
-    top: 40px;
-}
-
-.wordScore
-{
-    position: relative;
-    top: 200px;
-    display: flex;
-    flex-direction: row;
-    align-items: baseline;
-}
-
-#clockDown
-{
-    position: absolute;
-    top: 210px;
-    left: 950px;
-    color: $yellow;
-    font-size: 2em;
-}
 
 //RIGHT
 .owl

@@ -1,29 +1,27 @@
 #mathieu {
+
+  div{
+    height: 100px;
+    background-size: cover;
+    background-position: center center ;
+    margin: 2rem;
+    img{
+      width: 30px;
+    }
+  }
     #ronSection  {
-        img {
-            width: 30px;
-        }
         background: {
             image: url("../img/hapo.jpg");
-            size: cover;
           }
-          height: 100px;
     }
 
-  width: 33%;
-}
-
- {
-    #hermione {
-        img {
-            width: 30px;
+    #hermioneSection {
+      background: {
+          image: url("../img/hermi.jpeg");
         }
-        background: {
-            image: url("../img/hermi.jpeg");
-            size: cover;
-          }
-          height: 100px;
-    }
-
+  }
   width: 33%;
 }
+
+
+
