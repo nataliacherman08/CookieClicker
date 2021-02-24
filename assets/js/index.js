@@ -133,7 +133,7 @@ window.onload = () => {
     function disabled(){    
         let buttonClick = document.querySelectorAll(".clickModif")
         buttonClick.forEach(button =>{
-            if (parseInt(button.children[2].innerHTML) < 24){
+            if (parseInt(button.children[2].innerHTML) < 16){
                 if (parseFloat(button.children[1].children[0].innerHTML) <= parseFloat(score)){
                     button.classList.remove("disabled")
                     button.disabled = false;
