@@ -63,13 +63,17 @@
 .middle .word {
   font-size: 3em;
   color: #efc94a;
-  position: relative;
-  left: 90px;
-  top: 40px;
+}
+
+.middle #score {
+  color: #efc94a;
+  font-size: 1.8em;
+  font-family: "Harry P", sans-serif;
+  width: 2em;
+  height: 1em;
+  text-align: center;
 }
 .middle .wordScore {
-  position: relative;
-  top: 200px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -80,6 +84,8 @@
   -webkit-box-align: baseline;
       -ms-flex-align: baseline;
           align-items: baseline;
+  bottom: 0;
+  position: absolute;
 }
 .middle #clockDown {
   position: absolute;
@@ -138,18 +144,6 @@
   right: 10%;
   top: 0;
   opacity: 0.7;
-}
-
-#score {
-  color: #efc94a;
-  font-size: 1.8em;
-  position: relative;
-  left: 100px;
-  top: 40px;
-  font-family: "Harry P", sans-serif;
-  width: 2em;
-  height: 1em;
-  text-align: center;
 }
 
 *,
