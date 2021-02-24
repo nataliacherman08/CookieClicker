@@ -5,20 +5,45 @@
     background-size: cover;
     background-position: center center ;
     margin: 2rem;
+    border-radius: 10px;
     img{
-      width: 30px;
+      width: 35px;
+      padding-left: .7em;
+      padding-top: .5em;
+      justify-content: center;
     }
   }
     #ronSection  {
         background: {
-            image: url("../img/hapo.jpg");
+            image: url("../img/bgYellow.png");
           }
     }
 
     #hermioneSection {
       background: {
-          image: url("../img/hermi.jpeg");
+          image: url("../img/bgRed.png");
+          
         }
   }
-  width: 33%;
+
+    #harrySection {
+      background: {
+        image: url("../img/bgBlue.png");
+        
+      }
 }
+
+    #dobbySection {
+        background: {
+          image: url("../img/bgGreen.png");
+      
+    }
+}
+
+
+  width: 33%;
+  
+}
+
+
+
