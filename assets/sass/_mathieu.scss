@@ -1,13 +1,14 @@
 #mathieu {
 
   div{
-    height: 140px;
+    height: 25%;
     background-size: cover;
     background-position: center center ;
     margin: 0.5rem;
     border-radius: 10px;
+    position: relative;
     img{
-      width: 35px;
+      width: 8%;
       padding-left: .7em;
       padding-top: .5em;
       justify-content: center;
@@ -31,16 +32,16 @@
         image: url("../img/bgBlue.png");
         
       }
-}
+  }
 
     #dobbySection {
         background: {
           image: url("../img/bgGreen.png");
       
     }
-}
+  }
 
-
+  height: 60vh;
   width: 33%;
   
 }
