@@ -6,9 +6,9 @@ window.onload = () => {
     let priceAutoClickerHermione = 300;
     let priceAutoClickerHarry = 1000;
     let priceAutoClickerDobby = 2000;
-    let priceButtonX2 = 5; // prix initial du bouton X2
+    let priceButtonX2 = 10; // prix initial du bouton X2
 
-    let priceBonus = 100;// price for bonus
+    let priceBonus = 500;// price for bonus
     const scoreTitle = document.getElementById("score");
     const autoClickerRon = document.getElementById("auto-clicker_ron");
     const autoClickerHermione = document.getElementById("auto-clicker_hermione");
@@ -102,7 +102,7 @@ window.onload = () => {
         timedCount.addEventListener("click", () =>{
         score = score - priceBonus;
         scoreTitle.innerHTML = score
-        priceBonus = Math.floor(priceBonus * 1.4);
+        priceBonus = Math.floor(priceBonus * 5);
         let timeElm = document.getElementById('timedCount');
         let displayPrice = timeElm.getElementsByClassName("price"); 
         displayPrice[0].children[0].textContent = priceBonus;// changer dans le html
@@ -115,12 +115,12 @@ window.onload = () => {
                 clearTimeout(timerId);
                 multiplier = multiplier / 2;
                 let displayTime = document.getElementsByClassName("clockDown"); 
-                displayTime[0].textContent = "Timer ";
+                displayTime[0].textContent = "";
             } else {
                 
                 timeLeft--;
                 let displayTime = document.getElementsByClassName("clockDown"); 
-                displayTime[0].textContent = "Timer: "+timeLeft;
+                displayTime[0].textContent = timeLeft;
                 
             }
         }  
