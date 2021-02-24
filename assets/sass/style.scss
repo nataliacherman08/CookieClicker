@@ -36,6 +36,7 @@ body
     };
     font-family: "Harry P", sans-serif;
     cursor: url('../img/wand.png'),auto;
+    overflow: hidden;
 }
 
 h1
@@ -58,7 +59,7 @@ h1
     align-items: center;  
     margin: 0;
     padding: 0;  
-    height: 70vh;
+    height: 60vh;
 }
 
 footer
@@ -66,12 +67,13 @@ footer
     display: flex;
     flex-direction: row;
     justify-content: center;
+    margin-top: 40px;
 }
 
 .house
 {
-    height: 9vh;
+    height: 8vh;
     margin: 10px 10px;
     border: 2px solid $yellow;
-    border-radius: 6vh;
+    border-radius: 35px;
 }

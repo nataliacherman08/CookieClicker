@@ -92,7 +92,7 @@
 }
 
 .middle .dumbleclick {
-  height: 60vh;
+  height: 50vh;
 }
 
 .middle .word {
@@ -120,11 +120,19 @@
   -webkit-box-align: baseline;
       -ms-flex-align: baseline;
           align-items: baseline;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   bottom: 0;
   left: 50%;
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
   position: absolute;
+  background-color: #7d2430;
+  width: 300px;
+  border: 2px solid #efc94a;
+  border-radius: 15px;
+  padding: 5px;
 }
 
 .middle .clockDown {
@@ -179,22 +187,33 @@
   margin: 5px 40px;
   font-family: "Harry P", sans-serif;
   width: 9em;
-  height: 5rem;
+  height: 4.5rem;
   outline: none;
   border-radius: 10px;
   cursor: url("../img/magicWand.png"), auto;
 }
 
 .buttons div .btn .title {
-  position: absolute;
-  top: 0;
-  left: 10%;
+  /*position: absolute;
+                top: 0;
+                left: 10%;*/
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   font-size: 2rem;
+  margin-bottom: 20px;
 }
 
 .buttons div .btn .price {
   position: absolute;
-  bottom: 10%;
+  bottom: 6%;
   left: 10%;
 }
 
@@ -207,7 +226,7 @@
 }
 
 .buttons div .btn .bonhomme {
-  width: 30px;
+  max-height: 5vh;
 }
 
 *,
@@ -227,6 +246,7 @@ body {
   background-size: cover;
   font-family: "Harry P", sans-serif;
   cursor: url("../img/wand.png"), auto;
+  overflow: hidden;
 }
 
 h1 {
@@ -255,7 +275,7 @@ h1 {
           align-items: center;
   margin: 0;
   padding: 0;
-  height: 70vh;
+  height: 60vh;
 }
 
 footer {
@@ -269,12 +289,13 @@ footer {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  margin-top: 40px;
 }
 
 .house {
-  height: 9vh;
+  height: 8vh;
   margin: 10px 10px;
   border: 2px solid #efc94a;
-  border-radius: 6vh;
+  border-radius: 35px;
 }
 /*# sourceMappingURL=style.css.map */
