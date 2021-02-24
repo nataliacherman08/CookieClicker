@@ -8,7 +8,7 @@ window.onload = () => {
     let priceAutoClickerDobby = 2000;
     let priceButtonX2 = 5; // prix initial du bouton X2
 
-    let priceBonus = 5;// price for bonus
+    let priceBonus = 100;// price for bonus
     const scoreTitle = document.getElementById("score");
     const autoClickerRon = document.getElementById("auto-clicker_ron");
     const autoClickerHermione = document.getElementById("auto-clicker_hermione");
@@ -87,29 +87,36 @@ window.onload = () => {
 
     //       -------------------------
     buttonX2.addEventListener("click", () =>{
+
         score = score - priceButtonX2;
         scoreTitle.innerHTML = score
-        priceButtonX2 = Math.floor(priceButtonX2 * 1.4);
+        priceButtonX2 = Math.floor(priceButtonX2 * 1.8);
         let displayPrice = buttonX2.getElementsByClassName("price"); 
         displayPrice[0].children[0].textContent = priceButtonX2;// changer dans le html
         multiplier = multiplier * 2; 
-
+        
     })
     // -------------------------
 
 
     //  bonus x200 on clic
     timedCount.addEventListener("click", () =>{
+        let i = 1;
+        if(i>4){
         score = score - priceBonus;
         scoreTitle.innerHTML = score
-        priceBonus = Math.floor(priceBonus * 1.4);
+        priceBonus = Math.floor(priceBonus * 2);
         let timeElm = document.getElementById('timedCount');
         let displayPrice = timeElm.getElementsByClassName("price"); 
         displayPrice[0].children[0].textContent = priceBonus;// changer dans le html
-        let timeLeft = 10;
+        let timeLeft = 20;
         let timerId = setInterval(countdown, 1000);
         multiplier = multiplier * 2;
-        
+        i ++,
+        } else {
+            let displayPrice = timeElm.getElementsByClassName("price"); 
+            displayPrice[0].children[0].textContent = "sorry No More";
+        }
         function countdown(){
             if (timeLeft == -1) {
                 clearTimeout(timerId);
