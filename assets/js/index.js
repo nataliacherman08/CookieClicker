@@ -100,9 +100,11 @@ window.onload = () => {
             if (timeLeft == -1) {
                 clearTimeout(timerId);
                 multiplier = multiplier / 2;
-                
+                let displayTime = document.getElementsByClassName("clockDown"); 
+                displayTime[0].textContent = "Timer ";
             } else {
-                document.getElementsById("clockDown").innerHTML += timeLeft;
+                let displayTime = document.getElementsByClassName("clockDown"); 
+                displayTime[0].textContent = "Timer "+timeLeft;
                 timeLeft--;
                 
             }
