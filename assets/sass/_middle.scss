@@ -14,7 +14,7 @@ $yellow: #efc94a;
         outline: none;
         position: absolute;
         left: 50%;
-        top: 50%;
+        top: 45%;
         transform: translate(-50%,-50%);
         &:hover{
             transition: 0.6s;
@@ -28,7 +28,7 @@ $yellow: #efc94a;
     
     .dumbleclick
     {
-        width: 400px;
+        height: 60vh;
     }
 
 
