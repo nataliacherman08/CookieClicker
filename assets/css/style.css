@@ -68,7 +68,7 @@
 .middle .dumbledore {
   background: transparent;
   border: none;
-  cursor: pointer;
+  cursor: url("../img/magicWand.png"), auto;
   outline: none;
   position: absolute;
   left: 50%;
@@ -182,6 +182,7 @@
   height: 5rem;
   outline: none;
   border-radius: 10px;
+  cursor: url("../img/magicWand.png"), auto;
 }
 
 .buttons div .btn .title {
@@ -225,6 +226,7 @@ body {
   background-image: url("../img/hogwarts.png");
   background-size: cover;
   font-family: "Harry P", sans-serif;
+  cursor: url("../img/wand.png"), auto;
 }
 
 h1 {
