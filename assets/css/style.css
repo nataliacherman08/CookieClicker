@@ -89,15 +89,17 @@
   -webkit-box-align: baseline;
       -ms-flex-align: baseline;
           align-items: baseline;
-  bottom: 0;
+  bottom: -2em;
+  left: 11em;
   position: absolute;
 }
 
 .middle #clockDown {
   position: absolute;
+  top: -1em;
   left: 10em;
   color: #efc94a;
-  font-size: 2em;
+  font-size: 2.5em;
 }
 
 .disabled {
