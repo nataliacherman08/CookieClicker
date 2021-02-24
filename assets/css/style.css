@@ -33,8 +33,8 @@
 }
 #mathieu div img {
   width: 12%;
-  padding-left: .7em;
-  padding-top: .5em;
+  padding-left: 0.7em;
+  padding-top: 0.5em;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -127,7 +127,6 @@
 .buttons {
   width: 33%;
 }
-
 .buttons div {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -148,13 +147,11 @@
   width: 60%;
   margin-left: auto;
 }
-
 .buttons div .owl {
   width: 220px;
   position: absolute;
   top: -100px;
 }
-
 .buttons div .btn {
   position: relative;
   background-color: #efc94a;
@@ -168,20 +165,17 @@
   outline: none;
   border-radius: 10px;
 }
-
 .buttons div .btn .title {
   position: absolute;
   top: 0;
   left: 10%;
   font-size: 2rem;
 }
-
 .buttons div .btn .price {
   position: absolute;
   bottom: 10%;
   left: 10%;
 }
-
 .buttons div .btn .compteur {
   font-size: 2rem;
   position: absolute;
@@ -189,17 +183,10 @@
   left: 85%;
   top: 10px;
 }
-
 .buttons div .btn .bonhomme {
   width: 30px;
 }
 
-#footer {
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  bottom: 0;
-}
 *,
 *::before,
 *::after {
@@ -245,5 +232,4 @@ h1 {
   margin: 0;
   padding: 0;
   height: 80vh;
-}
-/*# sourceMappingURL=style.css.map */
+}/*# sourceMappingURL=style.css.map */
