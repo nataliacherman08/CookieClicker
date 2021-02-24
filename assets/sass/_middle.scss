@@ -55,17 +55,18 @@ $yellow: #efc94a;
         flex-direction: row;
         align-items: baseline;
         bottom: -2em;
-        left: 11em;
+        left: 50%;
+        transform: translateX(-50%);
         position: absolute;
 
     }
     
     //Timer
-    #clockDown
+    .clockDown
     {
         position: absolute;
-        top: -1em;
-        left: 10em;
+        top: 5%;
+        right: 10%;
         color: $yellow;
         font-size: 2.5em;
     }

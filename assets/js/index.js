@@ -5,6 +5,7 @@ window.onload = () => {
     let priceAutoClickerRon = 25;
     let priceAutoClickerHermione = 300;
     let priceAutoClickerHarry = 1000;
+    let priceAutoClickerDobby = 2000;
     let priceButtonX2 = 5; // prix initial du bouton X2
 
     let priceBonus = 5;// price for bonus
@@ -12,6 +13,7 @@ window.onload = () => {
     const autoClickerRon = document.getElementById("auto-clicker_ron");
     const autoClickerHermione = document.getElementById("auto-clicker_hermione");
     const autoClickerHarry = document.getElementById("auto-clicker_harry");
+    const autoClickerDobby = document.getElementById("auto-clicker_dobby");
     const buttonX2 = document.getElementById("buttonX2");
     
 
@@ -30,7 +32,7 @@ window.onload = () => {
 
     // autoclick event on hermione 
     autoClickerHermione.addEventListener("click", () =>{
-        incrementation += 1; // increse the incrementation in the set interval
+        incrementation += 0.5; // increse the incrementation in the set interval
         minScore(priceAutoClickerHermione);
         // modif the button
         autoClickerHermione.children[2].innerHTML = parseInt(autoClickerHermione.children[2].innerHTML) + 1;
@@ -42,7 +44,7 @@ window.onload = () => {
 
        // autoclick event on harry 
        autoClickerHarry.addEventListener("click", () =>{
-        incrementation += 0.5; // increse the incrementation in the set interval
+        incrementation += 1; // increse the incrementation in the set interval
         minScore(priceAutoClickerHarry);
         // modif the button
         autoClickerHarry.children[2].innerHTML = parseInt(autoClickerHarry.children[2].innerHTML) + 1;
@@ -51,6 +53,18 @@ window.onload = () => {
         addHarry();
         disabled();
     })
+
+        // auto-clicker event on dobby
+        autoClickerDobby.addEventListener("click", () =>{
+            incrementation += 1; // increse the incrementation in the set interval
+            minScore(priceAutoClickerDobby);
+            // modif the button
+            autoClickerDobby.children[2].innerHTML = parseInt(autoClickerDobby.children[2].innerHTML) + 1;
+            priceAutoClickerDobby = priceAutoClickerDobby + (priceAutoClickerDobby *0.2);
+            autoClickerDobby.children[1].children[0].innerHTML = parseInt(priceAutoClickerDobby);
+            addDobby();
+            disabled();
+        })
 
     // on click
     document.getElementById("click").addEventListener("click", () =>{
@@ -142,6 +156,9 @@ window.onload = () => {
 
     function addHarry(){
         document.getElementById("harrySection").innerHTML += '<img src="./assets/img/potter.png" alt="harry">';
+    }
+    function addDobby(){
+        document.getElementById("dobbySection").innerHTML += '<img src="./assets/img/dobby.png" alt="harry">';
     }
 }
 
