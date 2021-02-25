@@ -56,7 +56,7 @@ window.onload = () => {
 
         // auto-clicker event on dobby
     autoClickerDobby.addEventListener("click", () =>{
-        incrementation += 1; // increse the incrementation in the set interval
+        incrementation += 2; // increse the incrementation in the set interval
         minScore(priceAutoClickerDobby);
         // modif the button
         autoClickerDobby.children[2].innerHTML = parseInt(autoClickerDobby.children[2].innerHTML) + 1;
