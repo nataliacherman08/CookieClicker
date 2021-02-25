@@ -15,6 +15,7 @@
   bottom: 60px;
   left: 125px;
   cursor: url("../img/magicWand.png"), auto;
+  outline: none;
 }
 #mathieu {
   cursor: url("../img/wand.png") 4 4, auto;
