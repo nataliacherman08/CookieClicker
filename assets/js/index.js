@@ -6,7 +6,7 @@ window.onload = () => {
     let priceAutoClickerHermione = 300;
     let priceAutoClickerHarry = 1000;
     let priceAutoClickerDobby = 2000;
-    let priceButtonX2 = 10; // prix initial du bouton X2
+    let priceButtonX2 = 50; // prix initial du bouton X2
 
     let priceBonus = 500;// price for bonus
     const scoreTitle = document.getElementById("score");
@@ -90,7 +90,7 @@ window.onload = () => {
 
         score = score - priceButtonX2;
         scoreTitle.innerHTML = score
-        priceButtonX2 = Math.floor(priceButtonX2 * 1.8);
+        priceButtonX2 = Math.floor(priceButtonX2 * 3);
         let displayPrice = buttonX2.getElementsByClassName("price"); 
         displayPrice[0].children[0].textContent = priceButtonX2;// changer dans le html
         multiplier = multiplier * 2; 
