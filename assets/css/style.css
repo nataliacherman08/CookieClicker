@@ -4,19 +4,7 @@
   font-weight: normal;
   src: url("../fonts/HarryP.TTF") format("truetype");
 }
-#playpause{
-  background: url("../img/soundOn.png")  #7d2430;
-  background-size: cover;
-  border: 2px solid #efc94a;
-  border-radius: 50%;
-  height: 45px;
-  width: 45px;
-  position: absolute;
-  bottom: 60px;
-  left: 125px;
-  cursor: url("../img/magicWand.png"), auto;
-  outline: none;
-}
+
 #mathieu {
   cursor: url("../img/wand.png") 4 4, auto;
   display: -webkit-box;
@@ -260,6 +248,20 @@ body {
   font-family: "Harry P", sans-serif;
   cursor: url("../img/wand.png"), auto;
   overflow: hidden;
+}
+
+#playpause {
+  background: url("../img/soundOn.png") #7d2430;
+  background-size: cover;
+  border: 2px solid #efc94a;
+  border-radius: 50%;
+  height: 45px;
+  width: 45px;
+  position: absolute;
+  bottom: 60px;
+  left: 125px;
+  cursor: url("../img/magicWand.png"), auto;
+  outline: none;
 }
 
 h1 {

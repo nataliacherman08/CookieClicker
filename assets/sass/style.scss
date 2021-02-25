@@ -39,6 +39,21 @@ body
     overflow: hidden;
 }
 
+// play button
+#playpause{
+    background: url("../img/soundOn.png")  #7d2430;
+    background-size: cover;
+    border: 2px solid #efc94a;
+    border-radius: 50%;
+    height: 45px;
+    width: 45px;
+    position: absolute;
+    bottom: 60px;
+    left: 125px;
+    cursor: url("../img/magicWand.png"), auto;
+    outline: none;
+}
+
 h1
 {
     color:  $yellow;
