@@ -166,4 +166,17 @@ window.onload = () => {
         document.getElementById("dobbySection").innerHTML += '<img src="./assets/img/dobby.png" alt="harry">';
     }
 }
+//----------player sound-----------
+window.player = document.getElementById('player');
+document.getElementById('playpause').onclick = function () {
+    if (player.paused) {
+        player.play();
+        document.getElementById('playpause').style.background = 'url("./assets/img/soundOn.png")'+' #7d2430';
+        document.getElementById('playpause').style.backgroundSize = 'cover';
+    } else {
+        player.pause();
+        document.getElementById('playpause').style.background = 'url("./assets/img/soundOff.png")'+' #7d2430';
+        document.getElementById('playpause').style.backgroundSize = 'cover';
+    }
+}
 
